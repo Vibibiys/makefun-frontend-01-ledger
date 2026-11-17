@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>make.fun bounties</title>
+<meta name="description" content="Ledger: a light, fast frontend for make.fun — the live bounty board, every bounty's page and leaderboard, and public profiles, read straight from the public API.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+<script>window.__shotReady = false;</script>
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="#/">make.fun <em>bounties</em></a>
+  <nav aria-label="Sections">
+    <a href="#/">Bounty board</a>
+  </nav>
+  <form id="jump" role="search" aria-label="Jump to a profile">
+    <label class="visually-hidden" for="jump-handle">Account handle</label>
+    <input id="jump-handle" name="handle" type="text" placeholder="handle, e.g. gustaman" autocomplete="off" spellcheck="false">
+    <button type="submit">Profile</button>
+  </form>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="colophon">
+  <p>Every number on this page is live from the make.fun public API. A pot is the base
+  reward plus every entry fee paid so far. A bounty whose deadline has passed takes no
+  new entries, even while the API still calls it open.</p>
+</footer>
+</body>
+</html>
